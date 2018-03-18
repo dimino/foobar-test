@@ -1,14 +1,14 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 setup(
     name='foobar-test',
     version='0.0.0',
-    packages=find_packages(),
+    packages=['foobar'],
     install_requires=['requests', 'kafka-python', 'psycopg2'],
     entry_points={
         'console_scripts': [
-            'the-foobar-worker=foobar.foobar_one.service:main'
+            'the-foobar-worker=foobar.foobar_two.service:main'
         ]
     }
 )

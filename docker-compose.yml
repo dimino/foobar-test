@@ -3,5 +3,5 @@ services:
     foobar-worker:
         build: .
         command: the-foobar-worker
-        volumes:
-            - .:/src
+        # volumes:
+        #     - .:/src
