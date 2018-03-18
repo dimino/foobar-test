@@ -1,0 +1,9 @@
+version: "3"
+services:
+    postgres:
+        build: postgres/
+    foobar-worker:
+        build: .
+        command: the-foobar-worker
+        volumes:
+            - .:/src
