@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='event_driven_md',
+    name='foobar-test',
     version='0.0.0',
     packages=find_packages(),
     install_requires=['requests', 'kafka-python', 'psycopg2'],
