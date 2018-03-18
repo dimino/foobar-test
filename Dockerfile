@@ -3,7 +3,11 @@ ENV PYTHONUNBUFFERED 1
 RUN mkdir -p /src/
 WORKDIR /src
 
-COPY . /src/
+COPY requirements.txt /src/
 
 RUN pip install -U pip
-RUN pip install -r requirements.txt -e /src/
+RUN pip install -r requirements.txt
+
+COPY . /src/
+
+RUN pip install -e /src/
